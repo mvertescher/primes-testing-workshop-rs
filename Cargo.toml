@@ -5,3 +5,12 @@ name = "primes-testing-workshop"
 version = "0.1.0"
 
 [dependencies]
+
+[dev-dependencies]
+criterion = "0.2"
+primal = "0.2.3"
+primes = "0.2.3"
+
+[[bench]]
+name = "is_prime"
+harness = false
