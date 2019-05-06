@@ -5,7 +5,7 @@ fn first_factor(x: u64) -> u64 {
         return 2;
     }
 
-    for n in (3..).step_by(2).take_while(|m| m * m <= x) {
+    for n in (3..).step_by(2).take_while(|m| *m <= x) {
         if x % n == 0 {
             return n;
         }
